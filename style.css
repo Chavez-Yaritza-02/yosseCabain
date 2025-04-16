@@ -1,0 +1,193 @@
+/* Tipografías importadas desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Merriweather&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #f8f1e4;
+  color: #3e2f1c;
+}
+
+/* PORTADA */
+.portada {
+  background-image: url('img/portadayoss.jpg'); /* reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenido-portada h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3em;
+  color: #fff8e1;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.boton {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: #8b5e3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #a47148;
+}
+
+/* SECCIONES GENERALES */
+.seccion {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* CABANAS PRINCIPALES */
+.cabanas-principales {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cabana {
+  background-color: #fff;
+  border: 1px solid #d2b48c;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cabana h3 {
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+}
+
+/* OPINIONES */
+.opinion {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* WHATSAPP BOTÓN */
+a.boton[target="_blank"] {
+  margin-top: 15px;
+  display: inline-block;
+}
+#terminos {
+    background-color: #fdf6ec;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+    color: #4b2e14;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  #terminos h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  #terminos p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  #terminos p strong {
+    color: #2e1c0d;
+  }
+  @media (max-width: 768px) {
+    .cabana {
+      width: 90%;
+    }
+  }
+  .formulario-cotizacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .formulario-cotizacion input,
+  .formulario-cotizacion button,
+  .formulario-cotizacion label {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+  }
+  
+  .formulario-cotizacion input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .formulario-cotizacion button.boton-cotizar {
+    background-color: #25D366;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .formulario-cotizacion button:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+  }
+  .cotizaciones {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f6efe3;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cotizaciones h2 {
+    font-size: 2em;
+    color: #4B2E14;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .cotizaciones p {
+    font-size: 1.1em;
+    color: #3a2b1a;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+      
+  

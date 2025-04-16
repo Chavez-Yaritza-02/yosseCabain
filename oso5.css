@@ -1,0 +1,164 @@
+/* ======== Estilo general ======== */
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #fdf6ec;
+    color: #4B2E14;
+  }
+  
+  /* ======== Portada ======== */
+  .portada-cabana {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f6efe3;
+  }
+  
+  .portada-cabana h1 {
+    font-size: 2.5em;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 10px;
+  }
+  
+  .portada-cabana img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .portada-cabana p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* ======== Sección de descripción ======== */
+  .detalle-cabana {
+    background-color: #fffdf6;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .detalle-cabana h2,
+  .detalle-cabana h3 {
+    text-align: center;
+    color: #2e1c0d;
+    margin-bottom: 20px;
+  }
+  
+  .detalle-cabana p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+  
+  .detalle-cabana ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px 30px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .detalle-cabana ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* ======== Galería ======== */
+  .galeria {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .galeria h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .imagenes-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .imagenes-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .imagenes-galeria img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* ======== Botón de regreso ======== */
+  .boton-regresar {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .boton-regreso {
+    display: inline-block;
+    background-color: #4B2E14;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton-regreso:hover {
+    background-color: #3a1f0e;
+    transform: translateY(-3px);
+  }
+  
+  /* ======== Responsive ======== */
+  @media (max-width: 768px) {
+    .imagenes-galeria {
+      grid-template-columns: 1fr;
+    }
+  
+    .detalle-cabana ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  .boton-reservar {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .boton-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton-whatsapp:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+  }
+  
