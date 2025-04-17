@@ -189,5 +189,35 @@ a.boton[target="_blank"] {
     margin-bottom: 30px;
     text-align: center;
   }
-      
+  #deja-tu-opinion form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
   
+  #deja-tu-opinion input,
+  #deja-tu-opinion textarea,
+  #deja-tu-opinion select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+  }
+    
+       
+  .seccion {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px 80px;
+    background-color: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
