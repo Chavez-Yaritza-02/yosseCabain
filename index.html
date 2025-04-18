@@ -89,7 +89,7 @@
           <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
         </select>
     
-        <button type="submit" class="boton">Enviar por WhatsApp</button>
+        <button type="button" onclick="enviarPorWhatsApp()" style="background-color: #8B5A2B; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px;">Enviar por WhatsApp</button>
         <p style="text-align: center; font-size: 0.9em; color: #555;">
           📸 También puedes adjuntar una foto de tu experiencia al enviarlo por WhatsApp.
           </p>
@@ -123,24 +123,27 @@
     <p><strong>Clima:</strong> En caso de condiciones climáticas extremas que impidan la estancia, se podrá <strong>reprogramar la fecha</strong> sin costo adicional. No se realizan devoluciones.</p>
   
     <p><strong>Aceptación:</strong> Al reservar, aceptas haber leído y estar de acuerdo con todos estos términos y condiciones.</p>
-  </section>
-  
-  <script>
-    function enviarCotizacion(event) {
-      event.preventDefault();
-  
-      const nombre = document.getElementById("nombre").value;
-      const telefono = document.getElementById("telefono").value;
-      const personas = document.getElementById("personas").value;
-      const entrada = document.getElementById("entrada").value;
-      const salida = document.getElementById("salida").value;
-  
-      const mensaje = `Hola, soy ${nombre}. Quisiera cotizar una estancia para ${personas} personas desde el ${entrada} hasta el ${salida}. Mi número de contacto es: ${telefono}.`;
-  
-      const url = `http://wa.me/523316004292?text=${encodeURIComponent(mensaje)}`;
-      window.open(url, "_blank");
-    }
-  </script>
+    <script>
+      function enviarPorWhatsApp() {
+        var nombre = document.getElementById('nombre-op').value.trim();
+        var opinion = document.getElementById('mensaje-op').value.trim();
+        var calificacion = document.getElementById('estrellas').value;
+      
+        if (nombre === "" || opinion === "" || calificacion === "") {
+          alert("Por favor, completa todos los campos antes de enviar.");
+          return;
+        }
+      
+        var mensaje = `¡Hola! Mi nombre es ${nombre}.%0AOpinión: ${opinion}%0ACalificación: ${calificacion}`;
+        var numeroWhatsApp = "523316004292"; // Aquí directo tu número sin duplicarlo
+      
+        var enlace = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+      
+        window.open(enlace, '_blank');
+      }
+      </script>
+      
+    
   
 </body>
 </html>
