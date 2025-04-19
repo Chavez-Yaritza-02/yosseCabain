@@ -144,6 +144,36 @@
       </script>
       
     
-  
+      <script>
+        function enviarCotizacion(event) {
+          event.preventDefault(); // evita que se recargue la página
+        
+          // Obtener valores del formulario
+          var nombre = document.getElementById('nombre').value.trim();
+          var telefono = document.getElementById('telefono').value.trim();
+          var personas = document.getElementById('personas').value.trim();
+          var entrada = document.getElementById('entrada').value;
+          var salida = document.getElementById('salida').value;
+        
+          // Validar que los datos estén completos (por si acaso)
+          if (!nombre || !telefono || !personas || !entrada || !salida) {
+            alert('Por favor completa todos los campos.');
+            return;
+          }
+        
+          // Crear el mensaje de cotización
+          var mensaje = `Hola, soy ${nombre}. Quisiera cotizar una estancia para ${personas} personas.
+        Fecha de entrada: ${entrada}.
+        Fecha de salida: ${salida}.
+        Mi número de contacto es: ${telefono}.`;
+        
+          // Crear el enlace a WhatsApp (agregando el número, asegúrate de usar código de país si es necesario)
+          var url = "https://wa.me/52" + telefono.replace(/\D/g, '') + "?text=" + encodeURIComponent(mensaje);
+        
+          // Abrir WhatsApp en nueva pestaña
+          window.open(url, '_blank');
+        }
+        </script>
+        
 </body>
 </html>
